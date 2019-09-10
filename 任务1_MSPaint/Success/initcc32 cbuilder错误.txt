@@ -1,0 +1,9 @@
+网上搜罗帖子, 大概几种答案
+1. 连接数据库调试时, 直接按Ctrl + F2 , 退出, 导致的
+2. 引用Com, Dcom, Com+ 等有错误发生
+3. Tools->Debugger Options->Event log 页, Windows Messages 选项勾掉, 即可
+
+
+我是在 1 的情况发生这个错误, 但以前一直没问题的
+
+求高手帮忙解答啊!!!

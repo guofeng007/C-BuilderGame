@@ -1,0 +1,1 @@
+document.write('<li><a href="http://g.csdn.net/5235870" target=_blank>下载IBM云的力量推动业务模式创新</a></li><li><a href="http://g.csdn.net/5235869" target=_blank>借助内置无线热点，实现更多可能</a></li>');

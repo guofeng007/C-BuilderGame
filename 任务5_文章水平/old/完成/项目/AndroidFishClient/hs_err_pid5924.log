@@ -1,0 +1,85 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2923), pid=5924, tid=4060
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (11.3-b02 mixed mode windows-amd64)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000002bc00):  JavaThread "Unknown thread" [_thread_in_vm, id=4060, stack(0x0000000002020000,0x0000000002120000)]
+
+Stack: [0x0000000002020000,0x0000000002120000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+[error occurred during error reporting (printing native stack), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000002bc00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4060, stack(0x0000000002020000,0x0000000002120000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000042e000 	K:\ExtraProgramFiles\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\bin\javaw.exe
+0x0000000077250000 - 0x00000000773f9000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000076a30000 - 0x0000000076b4f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd710000 - 0x000007fefd77c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefead0000 - 0x000007fefebab000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff4c0000 - 0x000007feff55f000 	C:\Windows\system32\msvcrt.dll
+0x000007feff0e0000 - 0x000007feff0ff000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefec50000 - 0x000007fefed7d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000076b50000 - 0x0000000076c4a000 	C:\Windows\system32\USER32.dll
+0x000007fefe930000 - 0x000007fefe997000 	C:\Windows\system32\GDI32.dll
+0x000007fefefb0000 - 0x000007fefefbe000 	C:\Windows\system32\LPK.dll
+0x000007feff100000 - 0x000007feff1c9000 	C:\Windows\system32\USP10.dll
+0x000007fefef80000 - 0x000007fefefae000 	C:\Windows\system32\IMM32.DLL
+0x000007fefefc0000 - 0x000007feff0c9000 	C:\Windows\system32\MSCTF.dll
+0x000000006d890000 - 0x000000006de48000 	K:\ExtraProgramFiles\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\server\jvm.dll
+0x000007fefd5a0000 - 0x000007fefd5db000 	C:\Windows\system32\WINMM.dll
+0x000000006d3b0000 - 0x000000006d3ba000 	K:\ExtraProgramFiles\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\hpi.dll
+0x0000000077410000 - 0x0000000077417000 	C:\Windows\system32\PSAPI.DLL
+0x000000006d800000 - 0x000000006d80e000 	K:\ExtraProgramFiles\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\verify.dll
+0x000000006d450000 - 0x000000006d477000 	K:\ExtraProgramFiles\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\java.dll
+0x000000006d850000 - 0x000000006d862000 	K:\ExtraProgramFiles\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\android_sdk_moto\new\platforms\android-10\android.jar 
+java_command: TestServer
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\Java\jdk1.7.0_07\lib\tools.jar;C:\Program Files\Java\jdk1.7.0_07\lib\comm.jar;C:\Program Files\Java\jdk1.7.0_07\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_07\lib;C:\PROGRA~2\JMF21~1.1E\lib\sound.jar;C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar;C:\PROGRA~2\JMF21~1.1E\lib;.;.;.;C:\Program Files (x86)\JMF2.1.1e\lib\jmf.jar;C:\Program Files (x86)\JMF2.1.1e\lib\sound.jar;D:\library\JavaMail\mail.jar;D:\library\h2\h2.jar
+PATH=K:/ExtraProgramFiles/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_64_1.6.0.013/bin/../jre/bin/server;K:/ExtraProgramFiles/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_64_1.6.0.013/bin/../jre/bin;K:/ExtraProgramFiles/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_64_1.6.0.013/bin/../jre/lib/amd64;K:\ExtraProgramFiles\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\bin;C:\PROGRA~2\Borland\CBUILD~1\Bin;C:\PROGRA~2\Borland\CBUILD~1\Projects\Bpl;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;D:\MongoDB\bin;D:\library\h2\h2.jar;D:\DB\Oracle\instantclient_11_2;C:\Program Files (x86)\VisualSVN\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Motorola Mobility\MOTODEV Studio for Android;
+USERNAME=Administrator
+LD_LIBRARY_PATH=D:\DB\Oracle\instantclient_11_2
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 15 Model 107 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 15 model 107 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, mmxext, 3dnow, 3dnowext
+
+Memory: 4k page, physical 4192760k(1002748k free), swap 8383668k(4838012k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (11.3-b02) for windows-amd64 JRE (1.6.0_13-b03), built on Mar  9 2009 10:50:19 by "java_re" with MS VC++ 8.0
+
+time: Wed Nov 14 22:11:21 2012
+elapsed time: 0 seconds
+

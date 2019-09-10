@@ -1,0 +1,28 @@
+DLL文件而只能报告没有这个DLL存在了，所以在这个时候就需要我们注册DLL文件了。 
+Windows系统的DLL因为在安装时已经注册好了，因此不用注册，但是如果因为某种情况系统无法识别这些DLL文件时，还是需要我们手动再注册一遍。 
+2000系统的regsvr32.exe在winnt\system32文件夹下； 
+WInXP系统的regsvr32.exe在windows\system32文件夹下 
+regsvr32的用法为： 
+"regsvr32 [/s] [/n] [/i(:cmdline)] dllname”。其中dllname为activex控件文件名，建议在安装前拷贝到system文件夹下。 
+参数有如下意义： 
+/u——反注册控件 
+/s——不管注册成功与否，均不显示提示框 
+/c——控制台输出 
+/i——跳过控件的选项进行安装(与注册不同) 
+/n——不注册控件，此选项必须与/i选项一起使用 
+执行该命令的方法： 
+1、可以在“开始”--“运行”，调出运行的对话框，也可以使用Win+R热键，然后直接在输入栏输入即可 
+2、在开始--运行 输入cmd，调出‘命令提示符’窗口，然后再执行regsvr32命令。 
+二、Regsvr32错误消息的说明 
+当使用 Regsvr32.exe 时，它会尝试加载该组件并调用它的 DLLSelfRegister 函数。如果此尝试成功， Regsvr32.exe 会显示一个指示成功的对话框。如果此尝试失败，Regsvr32.exe 会返回一条错误消息，其中可能会包括一个 Win32 错误代码。 
+以下列表介绍了 RegSvr32 错误消息和可能的原因。 
+Unrecognized flag:/invalid_flag 
+键入的标志或开关组合无效（请参阅本文中的“Regsvr32.exe 的用法”一节）。 
+No DLL name specified. 
+未包括 .dll 文件名（请参阅本文中的“Regsvr32.exe 的用法”一节）。 
+Dllname was loaded, but the DllRegisterServer or DllUnregisterServer entry point was not found. 
+Dllname不是.dll 或.ocx 文件。例如，键入 regsvr32 wjview.exe 就会生成该错误消息。 
+例如，键入regsvr32 icwdial.dll 后就会返回该错误消息，因为 Icwdial.dll 文件不能自行注册。如果您怀疑内存中有损坏的Dllname 版本，请尝试重新启动计算机，或重新提取该文件的原始版本。如果您运行的是 Windows NT，可能需要使用 Microsoft Windows NT Server 4.0 资源工具包 中的 Kill 或 Pview 工具。有关其他信息，请单击以查看以下 Microsoft 知识库文章：197155 如何终止孤立进程OleInitialize failed (or OleUninitialize failed). 
+Regsvr32 必须先初始化 COM 库，然后才能调用所需的 COM 库函数并在关闭时撤消对该库的初始化。 
+实例应用: 
+一、轻松修复IE浏览器 

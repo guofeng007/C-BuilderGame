@@ -1,0 +1,1 @@
+Regsvr32 Mscomm32.ocx 

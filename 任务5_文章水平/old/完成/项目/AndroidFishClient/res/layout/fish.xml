@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fish"
+    android:orientation="vertical"
+    tools:context=".FishActivity" >
+
+    <TextView
+        android:id="@+id/textViewFishTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Feed Time(per second)" />
+
+    <Spinner
+        android:id="@+id/spinnerCmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonFishIt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fish it" />
+
+    <com.ambimmort.fish.PieChartView
+        android:id="@+id/pieCharView"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_weight="1.17" />
+
+    <Button
+        android:id="@+id/buttonSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting Server" />
+
+</LinearLayout>

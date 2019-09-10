@@ -1,0 +1,6 @@
+AnsiString.WideChar()  Êä³ö¿í×Ö·û
+AnsiString.c_str()     Êä³öÕ­×Ö·û
+
+
+AnsiString(char *)
+AnsiString (w_char *)

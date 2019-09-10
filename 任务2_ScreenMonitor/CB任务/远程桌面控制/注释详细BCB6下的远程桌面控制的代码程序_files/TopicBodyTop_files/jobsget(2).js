@@ -1,0 +1,1 @@
+document.write('<li><a href="http://www.csdn.net/article/2012-11-09/2811635-FCWR-Episode-Two" target=_blank>“非程勿扰”第二期，征8家优秀团队、100位技术高手</a></li>');

@@ -1,0 +1,3 @@
+重要，流中没有数据Server noblocking  不是threadblocking  
+       注意服务端发送数据流的时候，流的指针一定要复位才能重复读取发送，，否则，哎，没数据
+Client noblocking readbuf，而且再给image之前steram position也需要复位，不然不可以，，唉唉a，，这个错误，，还好找到了，sockettool调制好用

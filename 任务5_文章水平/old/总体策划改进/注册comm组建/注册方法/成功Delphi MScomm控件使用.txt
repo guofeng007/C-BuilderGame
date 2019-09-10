@@ -1,0 +1,28 @@
+
+1.在c:\\windows\\SysWOW64目录下面放置如下控件，就可
+
+2.说明：自带的MsComm不能在设计期使用，下载这个包，有注册文件：）
+
+Delphi中MsComm控件的安装使用 
+
+　　Delphi 具有功能强大、简便易用和代码执行速度快等特点，是全球公认的快速应用开发工具技术的先驱者。但是在对串口通信的控制上Delphi的帮助文档和其他书籍中很少提及，这恰恰又是在开发应用系统时会经常遇到的问题。用过VB的程序员都知道 VB的MSComm通信控件具有丰富的与串口通信密切相关的属性及事件，提供了一系列标准通信命令的接口，可以用它创建全双工的、事件驱动的、高效实用的通信程序。在这里就介绍一下如何把MSComm这个ActiveX控件加入到Delphi中，充分发挥出二者的优越性。 
+
+　　首先在VB安装目录下找到下列三个文件: 
+
+　　Mscomm.reg, Mscomm32.ocx,Mscomm32.dep ， 
+
+　　把这三个文件拷贝到Windows的system目录下（注意WinNT下是System32）。然后用Windows下的注册工具regsvr32注册该OCX控件，例如： 
+
+　　Regsvr32 … system目录\Mscomm32.ocx . 
+
+　　注册成功后用记事本打开Mscomm.reg,可以看到类似下面的内容: 
+
+　　[HKEY_CLASSES_ROOT\Licenses\4250E830-6AC2-11cf-8ADB-00AA00C00905] 
+
+@ = "kjljvjjjoquqmjjjvpqqkqmqykypoqjquoun"，为了能正确使用该控件，需要修改注册表的信息，在注册表的在HKEY_CLASSES_ROOT\Licenses下建一主键: 
+
+4250E830-6AC2-11cf-8ADB-00AA00C00905,主键的内容为 
+
+kjljvjjjoquqmjjjvpqqkqmqykypoqjquoun. 
+
+　　至此已经完成了控件的系统注册工作，剩下的工作是在Delphi中导入这个ActiveX控件,进入Delphi环境在Component菜单下选Import ActiveX Control,这时在列表中可以看到Microsoft Comm Control 6.0选项, 选中这个选项点击Install按钮,完成安装。在ActiveX控件页上可以看到一个电话为图标的控件，这就是MSComm控件。这样就可以象在VB中一样方便得使用MSComm控件了  

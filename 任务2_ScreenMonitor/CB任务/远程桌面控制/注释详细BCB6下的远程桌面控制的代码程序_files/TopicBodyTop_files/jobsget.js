@@ -1,0 +1,1 @@
+document.write('<li><a href="http://www.csdn.net/article/2012-11-08/2811629-Interview-Hortonworks-CTO-EricBaldeschw" target=_blank>他将Yahoo! Hadoop从20个节点扩展为42000个节点</a></li>');

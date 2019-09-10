@@ -1,0 +1,47 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+        : TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+BOOL CALLBACK  EnumChildProc(HWND hWnd,LPARAM lParam)
+{
+        char name[256];
+        GetWindowText(hWnd,name,256);
+        AnsiString strName=AnsiString(name);
+
+        char className[256];
+        GetClassName(hWnd,className,256);
+        AnsiString  strClassName = AnsiString(className);
+        if(strClassName =="SysListView32")
+        {
+                if(strName.AnsiPos("Project")>0)
+                {
+                            SendMessage(hWnd,LVM_DELETECOLUMN,(WPARAM)0,0);
+                }
+
+        }
+}
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+
+        HANDLE handle =   FindWindow(NULL,"Windows 任务管理器");
+        //SendMessage(handle,WM_CLOSE,0,0);
+
+
+        EnumChildWindows(handle,(WNDENUMPROC )EnumChildProc,NULL);
+
+}
+
+//---------------------------------------------------------------------------
+ 

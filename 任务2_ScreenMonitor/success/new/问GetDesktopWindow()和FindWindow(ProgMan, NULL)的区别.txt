@@ -1,0 +1,2 @@
+问GetDesktopWindow()和FindWindow("ProgMan", NULL)的区别，2者似乎都得到的是桌面句柄，有何区别？谢谢 
+GetDesktopWindow()得到的是FindWindow("ProgMan", NULL)的父窗口 
